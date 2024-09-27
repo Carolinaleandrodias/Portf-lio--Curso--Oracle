@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
 .cabecalho__container {
-    background: rgb(191, 142, 213);
+    /* background: rgb(191, 142, 213); */
     font-family: "Raleway", sans-serif;
     /* padding-left: 150px; */
     display: flex;
@@ -47,36 +55,38 @@ nav a:hover {
     margin-top: 30px;
     margin-left: 100px;
     font-size: 25px;
-    word-wrap: break-word;
-    max-width: 100%;
-    width: 75%;
-    height: auto;
+    width: 65%;
+    height: 250px;
     
     
 }
 
 .container__apresentacao {
-    /* background: skyblue; */
-    font-family: "Raleway", sans-serif;
-    flex: 1;
-    
+    /* background: rgb(4, 43, 58); */
+    margin-top: 10px;
     
 }
 
+.subtitulo__apresentaçao {
+    /* background: rgb(190, 199, 203); */
+    width: 95%;
+}
 
 .subtitulo{
     /* background: royalblue; */
-    font-family: "Raleway", sans-serif;
-    word-wrap: break-word;
+    width: 85%;
+    
     
 }
 
 .redes__sociais {
-    background: rgb(191, 142, 213);
+    /* background: #bf8ed5; */
     font-size: 16px;
     display: flex;
     list-style: none; 
-    padding-right: 100px;
+    padding: 0;
+    margin: 0;
+    
    
     
 
@@ -108,3 +118,169 @@ nav a:hover {
 
 }
 
+.container__sobre {
+    /* background: royalblue; */
+    font-family: "Raleway", sans-serif;
+    margin-left: 100px;
+    width: 65%;
+    height: 250px;
+    margin-top: 100px;
+
+}
+/* Estilos para telas menores que 768px */
+@media (max-width: 768px) {
+    .cabecalho__container {
+        flex-direction: column; 
+    }
+
+    .cabecalho__nomeC {
+        margin-left: 0;
+        text-align: center; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        margin-right: 0;
+    }
+}
+
+.titulo__sobre {
+    /* background: salmon; */
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+}
+
+.subtitulo__sobre {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;  
+}
+
+.container__skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.titulo__skills {
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+.imagens__skills {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.imagens__skills img {
+    border: 2px solid #bf8ed5; 
+    width: 50px;
+    border-radius: 8px; /* Cantos arredondados */
+    margin: 10px; /* Espaçamento entre as imagens */
+    padding: 10px; /* Espaçamento interno ao redor da imagem */
+    max-width: 100px; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s; /* Adiciona uma transição suave para efeitos de hover */
+}
+
+.imagens__skills img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse sobre ela */
+}
+
+.container__hobbies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.titulo__hobbies {
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+.imagens__hobbies {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    
+}
+
+.imagens__hobbies img {
+    border: 2px solid #bf8ed5; 
+    width: 50px;
+    border-radius: 8px; /* Cantos arredondados */
+    margin: 10px; /* Espaçamento entre as imagens */
+    padding: 10px; /* Espaçamento interno ao redor da imagem */
+    max-width: 100px; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s; /* Adiciona uma transição suave para efeitos de hover */
+}
+
+.imagens__hobbies img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse sobre ela */
+}
+
+.container__formacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.titulo__formacao {
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+.formacao__logo__furg {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.formacao_ingles__topway {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.formacao_alura__logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.imagens__formacao {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.imagens__formacao img {
+    border: 2px solid #bf8ed5; 
+    width: 80px;
+    border-radius: 8px; /* Cantos arredondados */
+    margin: 10px; /* Espaçamento entre as imagens */
+    padding: 10px; /* Espaçamento interno ao redor da imagem */
+    max-width: 100px; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s; /* Adiciona uma transição suave para efeitos de hover */
+}
+
+.imagens__formacao img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse sobre ela */
+}
