@@ -129,22 +129,56 @@ nav a:hover {
     margin-top: 100px;
 
 }
-/* Estilos para telas menores que 768px */
-@media (max-width: 768px) {
+
+/* Estilos para tablets (telas entre 768px e 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
     .cabecalho__container {
-        flex-direction: column; 
+        flex-direction: column;
+        align-items: center;
     }
 
-    .cabecalho__nomeC {
-        margin-left: 0;
-        text-align: center; 
+    .container__meio, .container__sobre {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .imagens__skills, .imagens__hobbies, .imagens__formacao {
+        width: 60%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Estilos para dispositivos móveis (telas menores que 768px) */
+@media (max-width: 768px) {
+    .cabecalho__container {
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul {
-        flex-direction: column; 
-        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__meio, .container__sobre {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .imagens__skills, .imagens__hobbies, .imagens__formacao {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagens__skills img, .imagens__hobbies img, .imagens__formacao img {
+        max-width: 50px; /* Diminuir o tamanho das imagens em telas pequenas */
     }
 }
+
+
+
 
 .titulo__sobre {
     /* background: salmon; */
