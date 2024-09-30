@@ -180,12 +180,12 @@ nav a:hover {
 
 .imagens__skills img {
     width: 80%;
-    border-radius: 8px; /* Cantos arredondados */
-    margin: 10px; /* Espaçamento entre as imagens */
-    padding: 10px; /* Espaçamento interno ao redor da imagem */
-    max-width: 100px; /* Limita a largura máxima da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    transition: transform 0.3s; /* Adiciona uma transição suave para efeitos de hover */
+    border-radius: 8px; 
+    margin: 10px; 
+    padding: 10px; 
+    max-width: 100px;
+    height: auto; 
+    transition: transform 0.3s; 
 }
 
 .imagens__skills img:hover {
@@ -216,12 +216,11 @@ nav a:hover {
 .imagens__hobbies img {
     border: 2px solid #bf8ed5; 
     width: 50px;
-    border-radius: 8px; /* Cantos arredondados */
-    margin: 10px; /* Espaçamento entre as imagens */
-    padding: 10px; /* Espaçamento interno ao redor da imagem */
-    max-width: 100px; /* Limita a largura máxima da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    transition: transform 0.3s; /* Adiciona uma transição suave para efeitos de hover */
+    border-radius: 8px;
+    padding: 10px; 
+    max-width: 100px; 
+    height: auto; 
+    transition: transform 0.3s;
 }
 
 .imagens__hobbies img:hover {
@@ -413,3 +412,21 @@ nav a:hover {
       width: 90%;
     }
   }
+
+  .footer {
+    color: #8b1e1e;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 1em;
+  }
+  
+ 
+  
